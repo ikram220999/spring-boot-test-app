@@ -26,4 +26,9 @@ public class DemoApplication {
     public String testing(@RequestParam(value = "name", defaultValue = "World") String name) {
       return String.format("Hello %s!", name);
     }
+
+	@GetMapping("/testing2")
+    public String testing2(@RequestParam(value = "name", defaultValue = "World") String name) {
+      return String.format("anak kambing");
+    }
 }
